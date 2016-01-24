@@ -14,6 +14,7 @@ and open the template in the editor.
          <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/smoothscroll.js"></script>
   
         <style>
             @font-face { font-family: Raleway; src: url('Raleway Thin.ttf'); }
@@ -69,6 +70,16 @@ and open the template in the editor.
                    color: turquoise;
                      }       
                      
+      .scrolldown
+      {
+	
+	animation-name: wiggle;
+	animation-duration: 1.2s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+	}
+}               
 	.affix {
       top: 20px;
       right:20px
@@ -90,22 +101,22 @@ and open the template in the editor.
             <h1 class="animated fadeInDown IntroCover"> Janakiraman Sankara Narayanan </h1>
             <h3 class="animated fadeInDown IntroCover"> Passionate engineer, Ardent coder, Fervent guitarist </h3>
             <br><br><br><br><br><br><br>
-            <a href="#sectionOne" class="IntroCover"> <h4> Read more... </h4> </a>
+            <a href="#sectionOne" class="IntroCover smoothScroll"> <h4> Read more... </h4> </a>
         
         </div>
         <div>
          <!--style="position:relative;top:100%;right:5%"-->
         <nav class="navbar navbar-default sidebar pull-right" id="myScrollspy" data-spy="affix" data-offset-top="700">
       <ul class="nav nav-stacked nav-pills" >
-      <li ><a href="#IntroIntroCoverSection">Cover</a></li>
-        <li><a href="#sectionOne">Education</a></li>
-        <li><a href="#sectionTwo">Experience</a></li>
-        <li><a href="#sectionThree">Skills</a></li>
-        <li><a href="#sectionThree">Projects</a></li>
-        <li><a href="#sectionThree">Courses</a></li>
-        <li><a href="#sectionThree">Publications</a></li>
-        <li><a href="#sectionThree">Hobbies and Interests</a></li>
-        <li><a href="#sectionThree">Contact Info</a></li>
+      <li ><a href="#IntroIntroCoverSection" class="smoothScroll">Cover</a></li>
+        <li><a href="#sectionOne" class="smoothScroll">Education</a></li>
+        <li><a href="#sectionTwo" class="smoothScroll">Experience</a></li>
+        <li><a href="#sectionThree" class="smoothScroll">Skills</a></li>
+        <li><a href="#sectionThree" class="smoothScroll">Projects</a></li>
+        <li><a href="#sectionThree" class="smoothScroll">Courses</a></li>
+        <li><a href="#sectionThree" class="smoothScroll">Publications</a></li>
+        <li><a href="#sectionThree" class="smoothScroll">Hobbies and Interests</a></li>
+        <li><a href="#sectionThree" class="smoothScroll">Contact Info</a></li>
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Section 4 <span class="caret"></span></a>
           <ul class="dropdown-menu">
