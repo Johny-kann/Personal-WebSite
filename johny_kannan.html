@@ -83,7 +83,46 @@ and open the template in the editor.
 	animation-iteration-count: infinite;
 	animation-direction: normal;
 	}
-}               
+	
+	div.education
+	{
+
+	background:rgba(255,255,255,.6);
+	
+	}
+	
+	div.experience
+	{
+/*	background:	rgba(22, 55, 114,0.6);*/
+	background:rgba(10, 35, 81,0.6);
+	color:#C4E1FF;
+	}
+	
+	div.skills{
+	
+	background:rgba(22, 24, 28,0.6);
+}
+
+	div.Projects
+	{
+	background:rgba(38, 3, 42,0.6);
+	color:#F7C9FC
+	}
+	
+	div.courses
+	{
+	background:rgba(250, 250, 250,0.6);
+	color:#383838
+}
+
+	div.hobbies
+	{
+	
+	background:rgba(35, 36, 41, 0.6);
+	color:#DBDBDB
+}
+	
+               
 	.affix {
       top: 20px;
       right:20px
@@ -95,6 +134,13 @@ and open the template in the editor.
       right:20px
 
 	}
+	
+	.opaqueFont
+	{
+	
+	opacity:1;
+	filter:alpha(opacity=100);
+}
 
         </style>
     </head>
@@ -125,15 +171,21 @@ and open the template in the editor.
     </nav>
     
     <div>
-       <div id="sectionOne" class="container-fluid" style="background:white;">
-       <div style="margin-left:10%;margin-right:5%;margin-top:50px;margin-bottom:50px;">
+       <div id="sectionOne"  style="background-image:url('Images/1522_white_abstract.jpg');">
+       <div class="education container" >
+       <div style="margin-left:10%;margin-right:5%;margin-top:50px;margin-bottom:50px;" class="opaqueFont">
        <div ><h1>Education</h1></div>
        <div class="row">
-       <div class="col-md-3">Florida Institue of Technology<br>Jan 2015 - Present
+       <div class="col-md-3"><p>Florida Institue of Technology<br>Jan 2015 - Present</p>
        		</div>
-       <div class="col-md-5">Master of Science <i>in Computer Engineering</i>
-		
-       <br>Recipient of Graduate Student Assistantship <i>(Fall 2015)</i>
+       <div class="col-md-5"><p>Master of Science <i>in Computer Engineering</i></p>
+		   
+		   <p align="justify" style="margin-bottom:20px;margin-top:20px">Concentration on both hardware and software courses made it 
+		   possible to appreciate the correlation between one another. Courses 
+		   covered a wide aspect of hardware/software tool chain such as 
+		   learning algorithms, designing graphical solutions, programming 
+		   parallel processors, architecture and controlling external embedded 
+		   devices.</p>Recipient of Graduate Student Assistantship <i>(Fall 2015)</i>
               <br>GPA :  <i>3.875/4</i>
 		</div>
        	
@@ -150,7 +202,10 @@ and open the template in the editor.
        </div>
        
        </div>
-       <div id="sectionTwo" class="container-fluid" style="background:#99B1E6;">
+       </div>
+       
+       <div id="sectionTwo"  style="background-image:url('Images/dark_blue.jpg');">
+       <div class="experience container">
      <div style="margin-left:10%;margin-right:5%;margin-top:50px;margin-bottom:50px">
        <div ><h1>Experience</h1></div>
        <div class="row">
@@ -193,8 +248,10 @@ and open the template in the editor.
        
        </div>
        </div>
+       </div>
 
-		<div id="sectionThree" class="container-fluid" style="background:#333333;">
+		<div id="sectionThree" style="background-image:url('Images/15916-grey-curves-2560x1600-abstract-wallpaper.jpg');">
+		<div class="skills container">
 		<div style="margin-left:10%;margin-right:15%;margin-top:50px;color:#CCCCCC;font-style:normal;font-weight:bold">
 		<div><h1>Skills</h1> <h3>Programming Lanuages</h3></div>
 		<div class="row" style="margin:20px">
@@ -463,12 +520,14 @@ and open the template in the editor.
 		</div>
 		
 		</div>
+		</div>
 
 		
 		</div>
         </div>
        
-       <div id="sectionFour" class="container-fluid" style="background:silver;">
+       <div id="sectionFour"  style="background-image:url('Images/colorful_wraps-2560x1440.jpg');">
+       <div class="Projects container" >
        <div style="margin-left:10%;margin-right:5%;margin-top:51px;margin-bottom:50px">
        <div ><h1>Projects</h1></div>
        <div class="row">
@@ -567,11 +626,13 @@ and open the template in the editor.
       </div>
 
 
-       
        </div>
        </div>
+       </div>
        
-       <div id="sectionFive" class="container-fluid" style="background:white;">
+	   <div style="background-image:url('Images/31_white_abstract.jpg');">
+       <div id="sectionFive">
+       <div class="courses container">
        <div style="margin-left:10%;margin-right:5%;margin-top:50px;margin-bottom:50px">
        <div ><h1>Courses</h1></div>
        <div class="row">
@@ -587,11 +648,12 @@ and open the template in the editor.
        
        </div>
 
-
+</div>
        
 	</div> 
 	
-	  <div id="sectionSix" class="container-fluid" style="background:#99B1E6;">
+	  <div id="sectionSix" >
+	  <div class="courses container">
        <div style="margin-left:10%;margin-right:5%;margin-top:50px;margin-bottom:50px;">
        <div ><h1>Pubications</h1></div>
        <div class="row">
@@ -605,14 +667,18 @@ and open the template in the editor.
 		       "Pulse shaping of digital Signals using compressed Sensing".International conference on Advances in Computer and Communication Technology (ACCT-12) IETE Mumbai, India.
        </div>
        </div>
-       
+       </div>
        </div>
 
 
        
 	</div> 
 	
-	<div id="sectionSeven" class="container-fluid" style="background:gray;">
+	</div>
+	
+	<div style="background-image:url('Images/line-figure-polygon-black-and-white.jpg');">
+	<div id="sectionSeven">
+	<div class="container hobbies">
        <div style="margin-left:10%;margin-right:5%;margin-top:50px;margin-bottom:50px">
        <div ><h1>Hobbies and Interests</h1></div>
        <div class="row">
@@ -626,13 +692,14 @@ and open the template in the editor.
        
        
        </div>
-
+</div>
 
        
 	</div> 
 	
 	
-	<div id="sectionEight" class="container-fluid" style="background:gray;">
+	<div id="sectionEight">
+	<div class="container hobbies">
        <div style="margin-left:10%;margin-right:5%;margin-top:50px;margin-bottom:50px">
        <div ><h1>Contact Info</h1></div>
        <div class="row">
@@ -650,11 +717,12 @@ and open the template in the editor.
        
        </div>
 
-
+	</div>
        
 	</div> 
-	
-            </div>  
+	</div>
+          </div>
+        </div>
         </div>
 
     </body>
