@@ -557,7 +557,45 @@ and open the template in the editor.
        <div class="col-md-2"><h3>Computer Graphics</h3><br>Jan 2015 - May 2015
        		</div>
        <div class="col-md-8">
-       <br><p style="font-weight:normal;font-size:large">Image Based Wrapping and Blending
+       <br>
+	   <p style="font-weight:normal;font-size:large">Multi Band stitching using OpenCV and Texture rendering using OpenGL
+	   
+	  <a data-toggle="collapse" href="#cgpr6">Expand
+	  <span class="glyphicon glyphicon-arrow-down"></span></a>
+	   <a href="https://github.com/Johny-kann/OpenCV_OpenGL_Cube"> 
+		GitHub<span class="glyphicon glyphicon-arrow-right"></span></a></p>
+		<div id="cgpr6" class="collapse">
+		
+		
+		<p class="separate">
+		
+		Stitching Images with OpenCV using mulit-band blender and Rendering cube with stitched images in OpenGL.
+<br><br>Modules
+<ul>
+<li> Stitching Images using OpenCV
+<li> Rendering the cube with OpenGL
+</ul>
+<br>Stitching Image 
+<ul>
+<li> 6 images are stitched into a single image using Multi-band blender  
+</ul>
+<br>Rendering cube with OpenGL
+<ul>
+<li> created a cube with OpenGL</li>
+<li> Textured the cube with stitched image</li>
+<li> Qt GUI container for displaying openGL</li>
+<li> Mouse actions to turn the camera</li>
+</ul>
+<br>See the below video for the rendered cube
+<br>
+<iframe width="420" height="315" src="https://www.youtube.com/embed/rNxMTq-zNqA" frameborder="0" allowfullscreen></iframe>
+		</p>
+       	
+       <br>
+	   
+	   </div>
+	   
+	   <p style="font-weight:normal;font-size:large">Image Based Wrapping and Blending
 	   
 	  <a data-toggle="collapse" href="#cgpr1">Expand
 	  <span class="glyphicon glyphicon-arrow-down"></span></a>
@@ -941,6 +979,72 @@ Methodology
 		</p>
 		</div></div>
       </div>
+	  
+	<div class="row">
+<div class="col-md-2"><h3>Artificial Intelligence</h3><br>Jan 2016 - May 2016</div>
+<div class="col-md-8">
+<br><p style="font-weight:normal;font-size:large">Path planning & Navigation using POMDP in an iRobot create 
+<a data-toggle="collapse" href="#AIpr1">Expand
+	  <span class="glyphicon glyphicon-arrow-down"></span></a>
+	   <a href="https://github.com/Johny-kann/Path-Planning-in-iRobot-create-using-POMDP"> 
+		GitHub<span class="glyphicon glyphicon-arrow-right"></span></a></p>
+		<div id="AIpr1" class="collapse">
+		<p class="separate">
+		The goal of the project is to make a robot plan its path from a source to the destination and reach the destination only by evidence and its previous transition.
+<br><br>The methodology involved
+<ul>
+<li> creating a graph of nodes connected to each other based on the arena </li>
+<li> assigning an equal belief for all the states </li>
+<li> computing policies using value iteration based on MDP and POMDP </li>
+<li> Issuing actions to the robot to move (Up,Down,Left,Right) </li>
+<li> Getting evidence from the robot if it hits anywhere </li>
+<li> updating the belief based on the evidence and actions </li>
+<li> Repeat the last 4 actions till it reaches the destination </li>
+</ul>
+<br>
+<i>Technical Features: Python, Multi-Threading, POMDP, MDP, PyCreate lib</i>
+		</p></div>
+		
+		<br><p style="font-weight:normal;font-size:large">Localization and Corner Detection using AI and Comptuer Vision with an R12 Robotic Arm 
+		<a data-toggle="collapse" href="#AIpr2">Expand
+		<span class="glyphicon glyphicon-arrow-down"></span></a>
+		<a href="https://github.com/Johny-kann/Localization-and-Corner-Detection-with-R12-Robotic-Arm">
+		GitHub<span class="glyphicon glyphicon-arrow-right"></span></a>
+		</p>
+		<div id="AIpr2" class="collapse">
+		<p class="separate">
+		R12 robotic arm has shoulder, elbow, waist and twist joints to move the end effector. A camera is attached to the end effector. The purpose is to find the corners of a box that could be present anywhere in its workspace.
+<br><br>Algorithm Methodology
+<ul>
+<li> Robot will take a series of pictures by dividing the workspace into sectors </li>
+<li> Use Computer vision to know about the status of the object in the sector </li>
+<li> Moves to the most appropriate quadrilateral in the sector where the possibility of box is high </li>
+<li> Subsequently takes pictures and moves to a corner depending on custom developed Fuzzy logic </li>
+</ul>
+<br>Robot Controller
+<ul>
+<li> Built a Custom GUI to control the Robotic arm remotely and for calibration </li>
+<li> Robot controlled via HTTP protocol </li>
+</ul>
+
+<br> Presented the GUI to future students for using the Robot easily
+
+<br>Image Processing
+<ul>
+<li> The image is blurred, applied threshold based on Hue and found the centroid based on the moments </li>
+<li> This is used to detect the quadrilateral of the image in the sector workspace </li>
+<li> Later, I found the possible contours, applied convex hull to the max size contour and applied an approximate polygon on top of it </li>
+</ul>
+
+<br>Quantization of the image
+<ul>
+<li> The image is quantized into to 3X3 grid based on the presence of the box, where each cell represents the ratio of the box that fills the space </li>
+<li> It can detect edge, corners using that </li>
+<li> Depending on the observation a weighted vector score is computed to make the Robot move for the next iteration. </li>
+</ul>
+<br>
+<i> Tools and Libraries : Java, JavaFX, OpenCV, Eclipse </i>
+		</p></div></div></div>
       
    <div class="row">
        <div class="col-md-2"><h3>Behaviour Analysis Tool</h3><br>Aug 2015 - Dec 2015
@@ -1067,8 +1171,7 @@ Methodology
        <div class="row">
        <div class="col-md-5">
        <span class="glyphicon glyphicon-user"></span> Janakiraman Sankara Narayanan <br>
-		<span class="glyphicon glyphicon-home"></span> 3151 South Babcock Street, Apt 69 <br>
-		Melbourne, FL – 32901 <br>
+		<span class="glyphicon glyphicon-home"></span> 11, Cheryl Court, Monmouth Junction, NJ 08852.<br>
 
 		<span class="glyphicon glyphicon-phone"></span> +1 732-567-8710 <br>
 		<span class="glyphicon glyphicon-envelope"></span> johny.manasee@gmail.com
