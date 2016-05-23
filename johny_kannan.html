@@ -983,33 +983,26 @@ Methodology
 	<div class="row">
 <div class="col-md-2"><h3>Artificial Intelligence</h3><br>Jan 2016 - May 2016</div>
 <div class="col-md-8">
-<br><p style="font-weight:normal;font-size:large">Multi Band stitching using OpenCV and Texture rendering using OpenGL
+<br><p style="font-weight:normal;font-size:large">Path planning & Navigation using POMDP in an iRobot create 
 <a data-toggle="collapse" href="#AIpr1">Expand
 	  <span class="glyphicon glyphicon-arrow-down"></span></a>
 	   <a href="https://github.com/Johny-kann/OpenCV_OpenGL_Cube"> 
 		GitHub<span class="glyphicon glyphicon-arrow-right"></span></a></p>
 		<div id="AIpr1" class="collapse">
 		<p class="separate">
-		Stitching Images with OpenCV using mulit-band blender and Rendering cube with stitched images in OpenGL.
-<br><br>Modules
+		The goal of the project is to make a robot plan its path from a source to the destination and reach the destination only by evidence and its previous transition.
+<br><br>The methodology involved
 <ul>
-<li> Stitching Images using OpenCV
-<li> Rendering the cube with OpenGL
+<li> creating a graph of nodes connected to each other based on the arena </li>
+<li> assigning an equal belief for all the states </li>
+<li> computing policies using value iteration based on MDP and POMDP </li>
+<li> Issuing actions to the robot to move (Up,Down,Left,Right) </li>
+<li> Getting evidence from the robot if it hits anywhere </li>
+<li> updating the belief based on the evidence and actions </li>
+<li> Repeat the last 4 actions till it reaches the destination </li>
 </ul>
-<br>Stitching Image 
-<ul>
-<li> 6 images are stitched into a single image using Multi-band blender  
-</ul>
-<br>Rendering cube with OpenGL
-<ul>
-<li> created a cube with OpenGL</li>
-<li> Textured the cube with stitched image</li>
-<li> Qt GUI container for displaying openGL</li>
-<li> Mouse actions to turn the camera</li>
-</ul>
-<br>See the below video for the rendered cube
 <br>
-<iframe width="420" height="315" src="https://www.youtube.com/embed/rNxMTq-zNqA" frameborder="0" allowfullscreen></iframe>
+<i>Technical Features: Python, Multi-Threading, POMDP, MDP, PyCreate lib</i>
 		</p></div></div></div>
       
    <div class="row">
