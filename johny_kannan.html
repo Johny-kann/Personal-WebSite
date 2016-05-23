@@ -986,7 +986,7 @@ Methodology
 <br><p style="font-weight:normal;font-size:large">Path planning & Navigation using POMDP in an iRobot create 
 <a data-toggle="collapse" href="#AIpr1">Expand
 	  <span class="glyphicon glyphicon-arrow-down"></span></a>
-	   <a href="https://github.com/Johny-kann/OpenCV_OpenGL_Cube"> 
+	   <a href="https://github.com/Johny-kann/Path-Planning-in-iRobot-create-using-POMDP"> 
 		GitHub<span class="glyphicon glyphicon-arrow-right"></span></a></p>
 		<div id="AIpr1" class="collapse">
 		<p class="separate">
@@ -1003,6 +1003,47 @@ Methodology
 </ul>
 <br>
 <i>Technical Features: Python, Multi-Threading, POMDP, MDP, PyCreate lib</i>
+		</p></div>
+		
+		<br><p style="font-weight:normal;font-size:large">Localization and Corner Detection using AI and Comptuer Vision with an R12 Robotic Arm 
+		<a data-toggle="collapse" href="#AIpr2">Expand
+		<span class="glyphicon glyphicon-arrow-down"></span></a>
+		<a href="https://github.com/Johny-kann/Localization-and-Corner-Detection-with-R12-Robotic-Arm">
+		GitHub<span class="glyphicon glyphicon-arrow-right"></span></a>
+		</p>
+		<div id="AIpr2" class="collapse">
+		<p class="separate">
+		R12 robotic arm has shoulder, elbow, waist and twist joints to move the end effector. A camera is attached to the end effector. The purpose is to find the corners of a box that could be present anywhere in its workspace.
+<br><br>Algorithm Methodology
+<ul>
+<li> Robot will take a series of pictures by dividing the workspace into sectors </li>
+<li> Use Computer vision to know about the status of the object in the sector </li>
+<li> Moves to the most appropriate quadrilateral in the sector where the possibility of box is high </li>
+<li> Subsequently takes pictures and moves to a corner depending on custom developed Fuzzy logic </li>
+</ul>
+<br>Robot Controller
+<ul>
+<li> Built a Custom GUI to control the Robotic arm remotely and for calibration </li>
+<li> Robot controlled via HTTP protocol </li>
+</ul>
+
+<br> Presented the GUI to future students for using the Robot easily
+
+<br>Image Processing
+<ul>
+<li> The image is blurred, applied threshold based on Hue and found the centroid based on the moments </li>
+<li> This is used to detect the quadrilateral of the image in the sector workspace </li>
+<li> Later, I found the possible contours, applied convex hull to the max size contour and applied an approximate polygon on top of it </li>
+</ul>
+
+<br>Quantization of the image
+<ul>
+<li> The image is quantized into to 3X3 grid based on the presence of the box, where each cell represents the ratio of the box that fills the space </li>
+<li> It can detect edge, corners using that </li>
+<li> Depending on the observation a weighted vector score is computed to make the Robot move for the next iteration. </li>
+</ul>
+<br>
+<i> Tools and Libraries : Java, JavaFX, OpenCV, Eclipse </i>
 		</p></div></div></div>
       
    <div class="row">
